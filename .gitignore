@@ -1,0 +1,10 @@
+# IntelliJ project files
+.idea
+*.iml
+project/target
+target
+project/project
+out
+gen
+*.class
+*.log

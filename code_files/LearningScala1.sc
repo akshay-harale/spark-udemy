@@ -1,7 +1,7 @@
 object LearningScala1 {
   // VALUES are immutable constants. You can't change them once defined.
-  val hello: String = "Hola!"                     //> hello  : String = Hola!
-  println(hello)                                  //> Hola!
+  val hello: String = "Hello!"                     //> hello  : String = Hola!
+  println(hello)                                 //> Hola!
   
   // Notice how Scala defines things backwards from other languages - you declare the
   // name, then the type.

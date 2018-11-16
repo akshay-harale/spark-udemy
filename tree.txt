@@ -1,0 +1,212 @@
+Loading settings from plugins.sbt ...[0m
+Loading project definition from /home/synerzip/codebase/spark-udemy/spark-code/project[0m
+Loading settings from build.sbt ...[0m
+Set current project to MovieSimilarities1M (in build file:/home/synerzip/codebase/spark-udemy/spark-code/)[0m
+clean = Task[Unit][0m
+  +-clean / streams = Task[sbt.std.TaskStreams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+  | +-Global / streamsManager = Task[sbt.std.Streams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+  | [0m
+  +-cleanFiles = Task[scala.collection.Seq[java.io.File]][0m
+  | +-cleanKeepFiles = Vector(/home/synerzip/codebase/spark-udemy/spark-code/target/.history)[0m
+  | | +-history = Some(/home/synerzip/codebase/spark-udemy/spark-code/target/.history)[0m
+  | |   +-target = target[0m
+  | |     +-baseDirectory = [0m
+  | |       +-thisProject = Project(id spark-code, base: /home/synerzip/codebase/spark-udemy/spark-code, configurations: List(compile, runtime, test,..[0m
+  | |       [0m
+  | +-ThisBuild / managedDirectory = lib_managed[0m
+  | +-target = target[0m
+  |   +-baseDirectory = [0m
+  |     +-thisProject = Project(id spark-code, base: /home/synerzip/codebase/spark-udemy/spark-code, configurations: List(compile, runtime, test, pro..[0m
+  |     [0m
+  +-ivyModule = Task[sbt.internal.librarymanagement.IvySbt#sbt.internal.librarymanagement.IvySbt$Module][0m
+    +-ivySbt = Task[sbt.internal.librarymanagement.IvySbt][0m
+    | +-Global / credentials = Task[scala.collection.Seq[sbt.librarymanagement.ivy.Credentials]][0m
+    | +-ivyConfiguration = Task[sbt.librarymanagement.ivy.IvyConfiguration][0m
+    | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+    | | +-crossTarget = target/scala-2.11[0m
+    | | | +-Global / crossPaths = true[0m
+    | | | +-pluginCrossBuild / sbtBinaryVersion = 1.0[0m
+    | | | | +-Zero / pluginCrossBuild / sbtVersion = 1.1.2[0m
+    | | | | [0m
+    | | | +-Global / sbtPlugin = false[0m
+    | | | +-scalaBinaryVersion = 2.11[0m
+    | | | | +-scalaVersion = 2.11.8[0m
+    | | | | [0m
+    | | | +-target = target[0m
+    | | |   +-baseDirectory = [0m
+    | | |     +-thisProject = Project(id spark-code, base: /home/synerzip/codebase/spark-udemy/spark-code, configurations: List(compile, runtime, tes..[0m
+    | | |     [0m
+    | | +-fullResolvers = Task[scala.collection.Seq[sbt.librarymanagement.Resolver]][0m
+    | | | +-bootResolvers = Task[scala.Option[scala.collection.Seq[sbt.librarymanagement.Resolver]]][0m
+    | | | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+    | | | | [0m
+    | | | +-externalResolvers = Task[scala.collection.Seq[sbt.librarymanagement.Resolver]][0m
+    | | | | +-appResolvers = Some(Vector(FileRepository(local, Patterns(ivyPatterns=Vector(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVer..[0m
+    | | | | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+    | | | | | +-Global / useJCenter = false[0m
+    | | | | | [0m
+    | | | | +-Global / resolvers = Vector()[0m
+    | | | | +-Global / useJCenter = false[0m
+    | | | | [0m
+    | | | +-overrideBuildResolvers = false[0m
+    | | | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+    | | | | [0m
+    | | | +-projectResolver = Task[sbt.librarymanagement.Resolver][0m
+    | | | | +-projectDescriptors = Task[scala.collection.immutable.Map[org.apache.ivy.core.module.id.ModuleRevisionId, org.apache.ivy.core.module.des..[0m
+    | | | |   +-Global / buildDependencies = sbt.internal.BuildDependencies@15994b0b[0m
+    | | | |   +-projectDescriptors / streams = Task[sbt.std.TaskStreams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    | | | |   | +-Global / streamsManager = Task[sbt.std.Streams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    | | | |   | [0m
+    | | | |   +-Global / settingsData = Task[sbt.internal.util.Settings[sbt.Scope]][0m
+    | | | |   +-thisProjectRef = ProjectRef(file:/home/synerzip/codebase/spark-udemy/spark-code/,spark-code)[0m
+    | | | |   [0m
+    | | | +-Global / sbtPlugin = false[0m
+    | | | +-Global / sbtResolver = URLRepository(typesafe-ivy-releases, Patterns(ivyPatterns=Vector(https://repo.typesafe.com/typesafe/ivy-releases/[..[0m
+    | | | [0m
+    | | +-ivyConfiguration / streams = Task[sbt.std.TaskStreams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    | | | +-Global / streamsManager = Task[sbt.std.Streams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    | | | [0m
+    | | +-ivyPaths = IvyPaths(/home/synerzip/codebase/spark-udemy/spark-code, Some(/home/synerzip/.ivy2))[0m
+    | | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+    | | | +-baseDirectory = [0m
+    | | |   +-thisProject = Project(id spark-code, base: /home/synerzip/codebase/spark-udemy/spark-code, configurations: List(compile, runtime, test,..[0m
+    | | |   [0m
+    | | +-Global / moduleConfigurations = List()[0m
+    | | +-otherResolvers = Task[scala.collection.Seq[sbt.librarymanagement.Resolver]][0m
+    | | | +-Global / publishTo = Task[scala.Option[sbt.librarymanagement.Resolver]][0m
+    | | | [0m
+    | | +-Global / checksums = Vector(sha1, md5)[0m
+    | | +-Global / updateOptions = UpdateOptions([0m
+  circularDependencyLevel = warn,[0m
+  latestSnapshots = true,[0m
+  cachedResolution = false[0m
+)[0m
+    | | [0m
+    | +-ivySbt / streams = Task[sbt.std.TaskStreams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    |   +-Global / streamsManager = Task[sbt.std.Streams[sbt.internal.util.Init$ScopedKey[_ <: Any]]][0m
+    |   [0m
+    +-moduleSettings = Task[sbt.librarymanagement.ModuleSettings][0m
+      +-allDependencies = Task[scala.collection.Seq[sbt.librarymanagement.ModuleID]][0m
+      | +-libraryDependencies = List(org.scala-lang:scala-library:2.11.8, org.apache.spark:spark-core:2.2.0:provided, org.apache.spark:spark-streamin..[0m
+      | | +-Global / autoScalaLibrary = true[0m
+      | | +-Global / managedScalaInstance = true[0m
+      | | +-Global / sbtPlugin = false[0m
+      | | +-Global / scalaHome = None[0m
+      | | +-Global / scalaOrganization = org.scala-lang[0m
+      | | +-scalaVersion = 2.11.8[0m
+      | | [0m
+      | +-Global / managedScalaInstance = true[0m
+      | +-pluginCrossBuild / sbtDependency = org.scala-sbt:sbt:1.1.2[0m
+      | | +-Global / appConfiguration = xsbt.boot.AppConfiguration@12cd129c[0m
+      | | +-Zero / pluginCrossBuild / sbtVersion = 1.1.2[0m
+      | | +-scalaBinaryVersion = 2.11[0m
+      | | +-scalaVersion = 2.11.8[0m
+      | | [0m
+      | +-projectDependencies = Task[scala.collection.Seq[sbt.librarymanagement.ModuleID]][0m
+      | | +-Global / buildDependencies = sbt.internal.BuildDependencies@15994b0b[0m
+      | | +-Global / settingsData = Task[sbt.internal.util.Settings[sbt.Scope]][0m
+      | | +-thisProjectRef = ProjectRef(file:/home/synerzip/codebase/spark-udemy/spark-code/,spark-code)[0m
+      | | [0m
+      | +-Global / sbtDependency = org.scala-sbt:sbt:1.1.2[0m
+      | +-Global / sbtPlugin = false[0m
+      | +-Global / scalaHome = None[0m
+      | +-scalaModuleInfo = Some(ScalaModuleInfo(2.11.8, 2.11, Vector(), true, false, true, org.scala-lang, Vector(scala-library, scala-compiler, sca..[0m
+      | | +-Global / scalaArtifacts = Vector(scala-library, scala-compiler, scala-reflect, scala-actors, scalap)[0m
+      | | +-Global / scalaOrganization = org.scala-lang[0m
+      | | +-scalaBinaryVersion = 2.11[0m
+      | | +-scalaVersion = 2.11.8[0m
+      | | [0m
+      | +-Global / scalaOrganization = org.scala-lang[0m
+      | +-scalaVersion = 2.11.8[0m
+      | [0m
+      +-Global / conflictManager = ConflictManager(latest-revision, *, *)[0m
+      +-Global / defaultConfiguration = Some(compile)[0m
+      +-Global / dependencyOverrides = Vector()[0m
+      +-Global / excludeDependencies = List()[0m
+      +-ivyConfigurations = List(compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-to..[0m
+      | +-Global / autoCompilerPlugins = true[0m
+      | +-Global / internalConfigurationMap = sbt.Defaults$$$Lambda$1386/379776337@54a056e4[0m
+      | +-Global / managedScalaInstance = true[0m
+      | +-Global / scalaHome = None[0m
+      | +-thisProject = Project(id spark-code, base: /home/synerzip/codebase/spark-udemy/spark-code, configurations: List(compile, runtime, test, pro..[0m
+      | [0m
+      +-Global / ivyValidate = false[0m
+      +-Global / ivyXML = [0m
+      +-projectID = com.sundogsoftware:moviesimilarities1m:1.0[0m
+      | +-Global / apiURL = None[0m
+      | +-artifacts = List(Artifact(moviesimilarities1m, pom, pom, None, Vector(pom), None, Map(), None), Artifact(moviesimilarities1m, jar, jar, Non..[0m
+      | | +-Compile / packageBin / artifact = Artifact(moviesimilarities1m, jar, jar, None, Vector(compile), None, Map(), None)[0m
+      | | | +-Global / artifactClassifier = None[0m
+      | | | +-Compile / configuration = compile[0m
+      | | | [0m
+      | | +-Global / publishArtifact = true[0m
+      | | +-Compile / packageDoc / artifact = Artifact(moviesimilarities1m, doc, jar, Some(javadoc), Vector(compile), None, Map(), None)[0m
+      | | | +-Zero / packageDoc / artifactClassifier = Some(javadoc)[0m
+      | | | +-Compile / configuration = compile[0m
+      | | | [0m
+      | | +-Global / publishArtifact = true[0m
+      | | +-Compile / packageSrc / artifact = Artifact(moviesimilarities1m, src, jar, Some(sources), Vector(compile), None, Map(), None)[0m
+      | | | +-Zero / packageSrc / artifactClassifier = Some(sources)[0m
+      | | | +-Compile / configuration = compile[0m
+      | | | [0m
+      | | +-Global / publishArtifact = true[0m
+      | | +-Test / packageBin / artifact = Artifact(moviesimilarities1m, jar, jar, Some(tests), Vector(test), None, Map(), None)[0m
+      | | | +-Global / artifactClassifier = None[0m
+      | | | +-Test / configuration = test[0m
+      | | | [0m
+      | | +-Zero / Test / publishArtifact = false[0m
+      | | +-Test / packageDoc / artifact = Artifact(moviesimilarities1m, doc, jar, Some(tests-javadoc), Vector(test), None, Map(), None)[0m
+      | | | +-Zero / packageDoc / artifactClassifier = Some(javadoc)[0m
+      | | | +-Test / configuration = test[0m
+      | | | [0m
+      | | +-Zero / Test / publishArtifact = false[0m
+      | | +-Test / packageSrc / artifact = Artifact(moviesimilarities1m, src, jar, Some(tests-sources), Vector(test), None, Map(), None)[0m
+      | | | +-Zero / packageSrc / artifactClassifier = Some(sources)[0m
+      | | | +-Test / configuration = test[0m
+      | | | [0m
+      | | +-Zero / Test / publishArtifact = false[0m
+      | | +-makePom / artifact = Artifact(moviesimilarities1m, pom, pom, None, Vector(pom), None, Map(), None)[0m
+      | | | +-moduleName = moviesimilarities1m[0m
+      | | |   +-normalizedName = moviesimilarities1m[0m
+      | | |     +-name = MovieSimilarities1M[0m
+      | | |     [0m
+      | | +-makePom / publishArtifact = true[0m
+      | |   +-Global / publishArtifact = true[0m
+      | |   +-Global / publishMavenStyle = true[0m
+      | |   [0m
+      | +-moduleName = moviesimilarities1m[0m
+      | | +-normalizedName = moviesimilarities1m[0m
+      | |   +-name = MovieSimilarities1M[0m
+      | |   [0m
+      | +-organization = com.sundogsoftware[0m
+      | +-pluginCrossBuild / sbtBinaryVersion = 1.0[0m
+      | | +-Zero / pluginCrossBuild / sbtVersion = 1.1.2[0m
+      | | [0m
+      | +-scalaBinaryVersion = 2.11[0m
+      | +-crossVersion = Binary(, )[0m
+      | +-Global / sbtPlugin = false[0m
+      | +-version = 1.0[0m
+      | [0m
+      +-projectInfo = ModuleInfo(MovieSimilarities1M, MovieSimilarities1M, None, None, Vector(), com.sundogsoftware, None, None, Vector())[0m
+      | +-description = MovieSimilarities1M[0m
+      | | +-name = MovieSimilarities1M[0m
+      | | [0m
+      | +-Global / developers = List()[0m
+      | +-Global / homepage = None[0m
+      | +-Global / licenses = List()[0m
+      | +-name = MovieSimilarities1M[0m
+      | +-organizationHomepage = None[0m
+      | | +-Global / homepage = None[0m
+      | | [0m
+      | +-organizationName = com.sundogsoftware[0m
+      | | +-organization = com.sundogsoftware[0m
+      | | [0m
+      | +-Global / scmInfo = None[0m
+      | +-Global / startYear = None[0m
+      | [0m
+      +-scalaModuleInfo = Some(ScalaModuleInfo(2.11.8, 2.11, Vector(), true, false, true, org.scala-lang, Vector(scala-library, scala-compiler, scala..[0m
+        +-Global / scalaArtifacts = Vector(scala-library, scala-compiler, scala-reflect, scala-actors, scalap)[0m
+        +-Global / scalaOrganization = org.scala-lang[0m
+        +-scalaBinaryVersion = 2.11[0m
+        +-scalaVersion = 2.11.8[0m
+        [0m

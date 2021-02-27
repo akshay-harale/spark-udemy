@@ -153,6 +153,12 @@ object DegreesOfSeparation {
     if (color2 == "GRAY" && color1 == "BLACK") {
       color = color1
     }
+	if (color1 == "GRAY" && color2 == "GRAY") {
+	  color = color1
+	}
+	if (color1 == "BLACK" && color2 == "BLACK") {
+	  color = color1
+	}
     
     return (edges.toArray, distance, color)
   }

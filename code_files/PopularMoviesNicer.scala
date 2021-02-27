@@ -14,9 +14,7 @@ object PopularMoviesNicer {
   def loadMovieNames() : Map[Int, String] = {
     
     // Handle character encoding issues:
-    implicit val codec = Codec("UTF-8")
-    codec.onMalformedInput(CodingErrorAction.REPLACE)
-    codec.onUnmappableCharacter(CodingErrorAction.REPLACE)
+    implicit val codec = Codec("ISO-8859-1") // This is the current encoding of u.item, not UTF-8.
 
     // Create a Map of Ints to Strings, and populate it from u.item.
     var movieNames:Map[Int, String] = Map()

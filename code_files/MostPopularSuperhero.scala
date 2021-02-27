@@ -8,7 +8,7 @@ import org.apache.log4j._
 object MostPopularSuperhero {
   
   // Function to extract the hero ID and number of connections from each line
-  def countCoOccurences(line: String) = {
+  def countCoOccurrences(line: String) = {
     var elements = line.split("\\s+")
     ( elements(0).toInt, elements.length - 1 )
   }
@@ -36,11 +36,11 @@ object MostPopularSuperhero {
     val names = sc.textFile("../marvel-names.txt")
     val namesRdd = names.flatMap(parseNames)
     
-    // Load up the superhero co-apperarance data
+    // Load up the superhero co-appearance data
     val lines = sc.textFile("../marvel-graph.txt")
     
     // Convert to (heroID, number of connections) RDD
-    val pairings = lines.map(countCoOccurences)
+    val pairings = lines.map(countCoOccurrences)
     
     // Combine entries that span more than one line
     val totalFriendsByCharacter = pairings.reduceByKey( (x,y) => x + y )
